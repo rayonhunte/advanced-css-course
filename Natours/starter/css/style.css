@@ -46,6 +46,7 @@ body {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .heading-primary {
@@ -113,5 +114,23 @@ body {
 .btn:link,
 .btn:visited
 {
-
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    margin-top: 20px;
 }
+
+.btn-white {
+    background-color: #fff;
+    color: #777;
+}
+
+.btn-hover {
+    transform: translateY(-3px);
+}
+
+.btn-active {
+    transform: translateY(-1px);
+}
+
