@@ -2,8 +2,10 @@
 COLORS:
 
 Light green: #7ed56f
-Medium green: #55c57a
+Medium green: #55c57
 Dark green: #28b485
+
+this is a test
 
 */
 *,
@@ -40,25 +42,6 @@ body {
   position: relative;
 }
 
-.logo-box {
-  position: absolute;
-  top: 4rem;
-  left: 4rem;
-}
-
-.logo {
-  height: 3.5rem;
-}
-
-.text-box {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  text-align: center;
-}
-
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
@@ -88,6 +71,25 @@ body {
   /* css short hand */
   -webkit-animation: moveInRight 1s ease-out;
           animation: moveInRight 1s ease-out;
+}
+
+.logo-box {
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+}
+
+.logo {
+  height: 3.5rem;
+}
+
+.text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 @-webkit-keyframes moveInLeft {

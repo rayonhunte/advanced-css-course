@@ -2,15 +2,19 @@
 COLORS:
 
 Light green: #7ed56f
-Medium green: #55c57a
+Medium green: #55c57
 Dark green: #28b485
+
+this is a test
 
 */
 
 $color-primary: #7ed56f;
 $color-primary-light: #55c57a;
 $color-primary-dark: #28b485;
-
+$color-gray-dark: #777;
+$color-white: #fff;
+$color-black: #000;
 
 
 *, 
@@ -29,7 +33,7 @@ body {
     font-weight: 400;
     font-size: 6rem;
     line-height: 1.7;
-    color: #777;
+    color: $color-gray-dark;
     padding: 3rem;
     box-sizing: border-box;
 }
@@ -44,28 +48,11 @@ body {
     background-position: top;
     clip-path: polygon(0 0,100% 0, 100% 75vh, 0 100%);
     position: relative;
-}
 
-.logo-box {
-    position: absolute;
-    top: 4rem;
-    left: 4rem;
-}
-
-.logo {
-    height: 3.5rem;
-}
-
-.text-box { 
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
 }
 
 .heading-primary {
-    color: #fff;
+    color: $color-white;
     text-transform: uppercase;
     /* do this so stop  animation shake */
     backface-visibility: hidden;
@@ -91,6 +78,26 @@ body {
     animation: moveInRight 1s ease-out;
    
 }
+
+.logo-box {
+    position: absolute;
+    top: 4rem;
+    left: 4rem;
+}
+
+.logo {
+    height: 3.5rem;
+}
+
+.text-box { 
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
 
 @keyframes moveInLeft {
     0% {
@@ -155,18 +162,18 @@ body {
 }
 
 .btn-white {
-    background-color: #fff;
-    color: #777;
+    background-color: $color-white;
+    color: $color-gray-dark;
 }
 
 .btn:hover {
     transform: translateY(-0.3rem);
-    box-shadow: 0 1rem 2rem rgba(0,0, 0,.2);
+    box-shadow: 0 1rem 2rem rgba($color-black,.2);
 }
 
 .btn:active {
     transform: translateY(-0.1rem);
-    box-shadow: 0 .5rem 1rem rgba(0,0, 0,.2);
+    box-shadow: 0 .5rem 1rem rgba($color-black,.2);
 }
 
 
@@ -184,7 +191,7 @@ body {
 }
 
 .btn-white::after {
-    background-color: #fff;
+    background-color: $color-white;
 }
 
 .btn:hover::after {
