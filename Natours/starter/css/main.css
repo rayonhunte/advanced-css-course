@@ -299,6 +299,28 @@ body {
           transform: translateY(0);
 }
 
+.composition {
+  position: relative;
+}
+
+.composition_photo {
+  width: 55%;
+  -webkit-box-shadow: 0 1.5rem 4 rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0 1.5rem 4 rem rgba(0, 0, 0, 0.4);
+  border-radius: 2px;
+  position: absolute;
+}
+
+.composition_photo--p1 {
+  left: 0;
+  top: -2rem;
+}
+
+.composition_photo--p2 {
+  left: 0;
+  top: -20rem;
+}
+
 .header {
   height: 95vh;
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(85, 197, 122, 0.8)), to(rgba(40, 180, 133, 0.8))), url(../img/hero.jpg);
