@@ -1,3 +1,6 @@
+// icon pack cdn
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+
 @import "abstracts/functions";
 @import "abstracts/mixins";
 @import "abstracts/variables";
@@ -11,11 +14,11 @@
 
 @import "components/button";
 @import "components/compotition";
-
+@import "components/feature-box";
 
 @import "layout/header";
 
-@import "layout/grid"
+@import "layout/grid";
 
 
 

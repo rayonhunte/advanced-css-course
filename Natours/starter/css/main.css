@@ -1,3 +1,4 @@
+@import url("https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css");
 *,
 *::after, *::before {
   margin: 0;
@@ -208,6 +209,13 @@ body {
   margin-top: -20vh;
 }
 
+.section-features {
+  padding: 20rem 0;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(85, 197, 122, 0.8)), to(rgba(40, 180, 133, 0.8))), url(../img/nat-4.jpg);
+  background-image: linear-gradient(to right bottom, rgba(85, 197, 122, 0.8), rgba(40, 180, 133, 0.8)), url(../img/nat-4.jpg);
+  background-size: cover;
+}
+
 .btn:link, .btn:visited {
   display: inline-block;
   text-transform: uppercase;
@@ -305,10 +313,14 @@ body {
 
 .composition_photo {
   width: 55%;
-  -webkit-box-shadow: 0 1.5rem 4 rem rgba(0, 0, 0, 0.4);
-          box-shadow: 0 1.5rem 4 rem rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
   border-radius: 2px;
   position: absolute;
+  z-index: 1;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  outline-offset: 2rem;
 }
 
 .composition_photo--p1 {
@@ -317,8 +329,37 @@ body {
 }
 
 .composition_photo--p2 {
-  left: 0;
-  top: -20rem;
+  right: 0;
+  top: 2rem;
+}
+
+.composition_photo--p3 {
+  left: 20%;
+  top: 10rem;
+}
+
+.composition_photo:hover {
+  outline: 1.5rem solid #7ed56f;
+  -webkit-transform: scale(1.05) translateY(-0.5rem);
+          transform: scale(1.05) translateY(-0.5rem);
+  -webkit-box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.composition:hover .composition__photo:not(:hover) {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.feature-box {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 1.5 4rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1.5 4rem rgba(0, 0, 0, 0.15);
 }
 
 .header {
